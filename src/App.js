@@ -10,10 +10,12 @@ import {
   Switch,
   Route,
 } from 'react-router-dom';
+import { Context } from "./context/Context";
+import { useContext } from "react";
 
 
 function App() {
-  const user = false;
+  const { user } = useContext(Context);
   return (
     <div className="App">
       <Router>
